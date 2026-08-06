@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import os
 import cv2
 
-MODEL_PATH = "yolov8n.pt" # Kullanılacak model
+MODEL_PATH = "yolov8n.pt" # Kullanılan model
 IMAGE_DIR = "new_frames"
 LABEL_DIR = "new_labels"
 

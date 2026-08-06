@@ -1,20 +1,32 @@
-# YOLO-Label-Editor
-YOLO formatında sınırlayıcı kutu etiketleri oluşturmak ve düzenlemek için OpenCV tabanlı, bir etiketleme aracı.
+# YOLO Label Editor
 
-## opencv_label_editor.py
-Etiketleme yapmak için kullanılan program. Atanılan tuşlar:
-Q: Programı Kapat
-S: Değişiklikleri Kaydet
-A: Önceki Resim
-D: Sonraki Resim
-Z: Değişikliği Geri Al
-Y: Değişikliği İleri Al
+YOLO formatında sınırlayıcı kutu (bounding box) etiketleri oluşturmak ve düzenlemek için geliştirilmiş OpenCV tabanlı bir etiketleme aracıdır.
 
-## extract_frames_videos.py
-Videoyu frame'lere bölmek için kullanılan kod.
+## Dosyalar
 
-## extract_frames_folders.py
-Klasördeki frame'leri bölmek için kullanılan kod.
+### `opencv_label_editor.py`
+YOLO formatında etiketleme yapmak ve mevcut etiketleri düzenlemek için kullanılan program.
 
-## auto_label.py
-Bir modelle frame'leri otomatik etiketlemek için kullanılan kod
+**Klavye Kısayolları**
+- **Q** : Programı kapatır.
+- **S** : Yapılan değişiklikleri kaydeder.
+- **A** : Önceki görsele geçer.
+- **D** : Sonraki görsele geçer.
+- **Z** : Son işlemi geri alır.
+- **Y** : Geri alınan işlemi tekrar uygular.
+- **0-3** : Etiket sınıfını seçer.
+
+---
+
+### `extract_frames_videos.py`
+Belirlenen aralıklarla videodan frame çıkararak yeni bir klasöre kaydeder.
+
+---
+
+### `extract_frames_folders.py`
+Bir klasördeki görsellerden belirlenen aralıklarla seçim yaparak yeni bir klasöre kopyalar.
+
+---
+
+### `auto_label.py`
+Eğitilmiş bir YOLO modeli kullanarak görseller için otomatik olarak YOLO formatında etiket dosyaları oluşturur.

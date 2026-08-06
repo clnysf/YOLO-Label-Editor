@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import os
 import cv2
 
-MODEL_PATH = "runs/detect/custom_drone_20260713_1150/weights/best.pt"
+MODEL_PATH = "yolov8n.pt" # Kullanılacak model
 IMAGE_DIR = "new_frames"
 LABEL_DIR = "new_labels"
 

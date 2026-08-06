@@ -4,7 +4,7 @@ import cv2
 IMAGE_DIR = "new_frames"
 LABEL_DIR = "new_labels"
 
-CLASSES = ["vehicle", "person", "UAP", "UAI"]
+CLASSES = ["car", "human", "bird", "tree"]
 
 images = sorted([
     f for f in os.listdir(IMAGE_DIR)
